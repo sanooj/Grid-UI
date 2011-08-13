@@ -1,0 +1,19 @@
+/* Grid Layout */
+body {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color: #575757;
+	margin:0px;
+	padding:0px;
+}
+table {
+	line-height:inherit;
+	margin:0px;
+	padding:0px;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.grid
+{	width:656px;
+	margin:0 auto;
+}

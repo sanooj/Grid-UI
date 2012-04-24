@@ -2,158 +2,165 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Grid UI</title>
 <!-- Styling -->
 <link href="css/layout.css" rel="stylesheet" type="text/css" media="screen" />
 <!-- JQuery Plugin -->
 <script type="text/javascript" src="script/jquery.min.js"></script>
 <!-- Grid UI -->
 <script type="text/javascript" src="script/grid-UI.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('.gridUi').gridUi();
+});
+</script>
 </head>
 
 <body>
 <!-- Begin : Table -->
-<h2> Grid Styling Using Jquery</h2>
-<table cellpadding="0" cellspacing="0" border="0" class="grid" title="grid">
-<colgroup>
-    	<col class="col01" />
-        <col class="col02" />
-        <col class="col03" />
-        <col class="col04" />
-        <col class="col05" />
-        <col class="col06" />
-        <col class="col07" />
-    </colgroup>
-	<thead>
-    	<tr>
-    		<th>&nbsp;</th>
-            <th>Heading 01</th>
-            <th>Heading 02</th>
-            <th>Heading 03</th>
-            <th>Heading 04</th>
-            <th>Heading 05</th>
-            <th>&nbsp;</th>
-        </tr>
-    </thead>
-    <tfoot>
-    	<tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-    </tfoot>
-    <tbody>
-    	<tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-        	<td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-    </tbody>
-</table>
-<!-- End : Table --> 
-<!-- Begin : Listing -->
-<h2> Unordered Listing using Jquery</h2>
-<center>
-  Styling fisrt/last, odd/even childrens 
-</center><br />
-<ul>
-	<li>first Child</li>
-    <li>Child</li>
-    <li>Child</li>
-    <li>Child</li>
-    <li>Child</li>
-    <li>Child</li>
-    <li>last Child</li>
-</ul>
-<!-- End : LIsting -->
+<div class="gridUi">
+    <h2> Grid Styling Using Jquery</h2>
+    <table cellpadding="0" cellspacing="0" border="0" class="grid" title="grid">
+    <colgroup>
+        	<col class="col01" />
+            <col class="col02" />
+            <col class="col03" />
+            <col class="col04" />
+            <col class="col05" />
+            <col class="col06" />
+            <col class="col07" />
+        </colgroup>
+    	<thead>
+        	<tr>
+        		<th>&nbsp;</th>
+                <th>Heading 01</th>
+                <th>Heading 02</th>
+                <th>Heading 03</th>
+                <th>Heading 04</th>
+                <th>Heading 05</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tfoot>
+        	<tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tfoot>
+        <tbody>
+        	<tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+            	<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- End : Table --> 
+    <!-- Begin : Listing -->
+    <h2> Unordered Listing using Jquery</h2>
+    <center>
+      Styling fisrt/last, odd/even childrens 
+    </center><br />
+    <ul>
+    	<li>first Child</li>
+        <li>Child</li>
+        <li>Child</li>
+        <li>Child</li>
+        <li>Child</li>
+        <li>Child</li>
+        <li>last Child</li>
+    </ul>
+    <!-- End : LIsting -->
+</div>
 </body>
 </html>

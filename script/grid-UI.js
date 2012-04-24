@@ -18,25 +18,31 @@
         Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 */
 // JavaScript Document
-$(function()
+(function($)
 {
-	// list styling
-	$('ul li:last-child').addClass('last');
-	$('ul li:first-child').addClass('first');
-	$('ul li:nth-child(odd)').addClass('odd');
-	$('ul li:nth-child(even)').addClass('even');
-	$('ul li').addClass('items');
 	
-	// Grid Styling
-	$("table thead tr th:first-child").addClass('table-head-left');
-	$("table thead tr th:last-child").addClass('table-head-right');
-	$("table tbody tr td:first-child").addClass('table-body-left');
-	$("table tbody tr td:last-child").addClass('table-body-right');
-	$("table tfoot tr td:first-child").addClass('table-foot-left');
-	$("table tfoot tr td:last-child").addClass('table-foot-right');
-	$("table tr:nth-child(odd)").addClass('table-bodyodd');
-	$("table tr:nth-child(even)").addClass('table-bodyeven');
-	$("table tr:nth-child(odd) td").addClass('table-bodyodd-td');
-	$("table tr:nth-child(even) td").addClass('table-bodyeven-td');
-	
-});
+    $.fn.gridUi = function(){
+
+    	var element = $(this);
+
+		// list styling
+
+		$(element).find('ul li').addClass('items');
+		$(element).find('ul li:last-child').addClass('last').removeClass('items');
+		$(element).find('ul li:first-child').addClass('first').removeClass('items');
+		$(element).find('ul li:nth-child(odd)').addClass('odd');
+		$(element).find('ul li:nth-child(even)').addClass('even');
+		
+		// Grid Styling
+		$(element).find("table thead tr th:first-child").addClass('table-head-left');
+		$(element).find("table thead tr th:last-child").addClass('table-head-right');
+		$(element).find("table tbody tr td:first-child").addClass('table-body-left');
+		$(element).find("table tbody tr td:last-child").addClass('table-body-right');
+		$(element).find("table tfoot tr td:first-child").addClass('table-foot-left');
+		$(element).find("table tfoot tr td:last-child").addClass('table-foot-right');
+		$(element).find("table tr:nth-child(odd)").addClass('table-bodyodd');
+		$(element).find("table tr:nth-child(even)").addClass('table-bodyeven');
+		$(element).find("table tr:nth-child(odd) td").addClass('table-bodyodd-td');
+		$(element).find("table tr:nth-child(even) td").addClass('table-bodyeven-td');
+	};
+})(jQuery);
